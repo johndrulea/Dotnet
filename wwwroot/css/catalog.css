@@ -1,0 +1,40 @@
+.item{
+    border: 1px solid rgb(186, 182, 182);
+    display: inline-block;
+    border-radius: 15px;
+    vertical-align: top;
+    background-color: antiquewhite;
+    width: 400px;
+    height: 380px;
+    padding: 5px 5px 5px 5px;
+    margin: 15px;
+
+}
+
+.catalog{
+    display: inline-block;
+}
+
+
+
+img{
+    height: 45%;
+    width: 100%;
+    border-radius: 15px;
+    
+}
+
+h3{
+    color: darkblue;
+    font-size: 25px;
+}
+
+h1{
+    font-size: 45px;
+    text-align: center;
+
+}
+
+li{
+    font-size: 30px;
+}

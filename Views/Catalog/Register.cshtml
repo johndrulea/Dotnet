@@ -1,0 +1,103 @@
+<link rel="stylesheet" href="css/catalog.css">
+
+@{
+    ViewData["Title"] = "Register Your Car Here";
+}
+
+<div class="d-flex justify-content-start">
+  <div class="my-form">
+  <h1>Register New Car</h1>
+  <form>
+    <div class="form-group row">
+      <label for="text" class="col-4 col-form-label ">Make</label> 
+      <div class="col-8">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">
+              <i class="fa fa-address-card"></i>
+            </div>
+          </div> 
+          <input id="make" name="text" type="text" class="form-control">
+        </div>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="Model" class="col-4 col-form-label">Model</label> 
+      <div class="col-8">
+        <input id="model" name="Model" type="text" class="form-control">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="year" class="col-4 col-form-label">Year</label> 
+      <div class="col-8">
+        <input id="year" name="year" type="text" class="form-control">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="price" class="col-4 col-form-label">Price</label> 
+      <div class="col-8">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">$</div>
+          </div> 
+          <input id="price" name="price" placeholder="Price Range" type="number" class="form-control">
+        </div>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="color" class="col-4 col-form-label">Color</label> 
+      <div class="col-8">
+        <select id="color" name="color" class="custom-select">
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="mileage" class="col-4 col-form-label">Mileage</label> 
+      <div class="col-8">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">
+              <i class="fa fa-road"></i>
+            </div>
+          </div> 
+          <input id="mileage" name="mileage" type="text" class="form-control">
+        </div>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="image" class="col-4 col-form-label">Image</label> 
+      <div class="col-8">
+        <input id="image" name="image" type="text" class="form-control">
+      </div>
+    </div> 
+      <div class="form-group row">
+      <div class="offset-4 col-8">
+        <button id="btn-save" name="submit"  type="button" class="btn btn-primary">Register!</button>
+      </div>
+    </div>
+    
+  </form>
+  </div>
+</div>
+
+
+@section Scripts {
+  <script src="/js/register.js"></script>
+}
+
+
+
+@*
+    make
+    model
+    year
+    color
+    price
+    mileage
+    condition (new/used)
+    image
+
+*@
